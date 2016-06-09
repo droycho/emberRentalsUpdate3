@@ -14,6 +14,7 @@ export default Ember.Component.extend({
         image: this.get('image') ? this.get('image') : "",
         bedrooms: this.get('bedrooms') ? this.get('bedrooms') : "",
       };
+      console.log(params.city.get("name"));
       this.set('addNewRental', false);
       this.sendAction('rentalSave', params);
     }
