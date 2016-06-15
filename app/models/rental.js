@@ -6,5 +6,8 @@ export default DS.Model.extend({
     type: DS.attr(),
     image: DS.attr(),
     bedrooms: DS.attr(),
-    cost: DS.attr()
+    cost: DS.attr(),
+    date_added: DS.attr(),
+    latitude: DS.attr('number'),
+    longitude: DS.attr('number')
 });

@@ -13,7 +13,10 @@ export default Ember.Component.extend({
         type: this.get('type') ? this.get('type') : "",
         image: this.get('image') ? this.get('image') : "",
         bedrooms: this.get('bedrooms') ? this.get('bedrooms') : "",
-        cost: parseInt(this.get('cost'))
+        cost: parseInt(this.get('cost')),
+        latitude: this.get('latitude'),
+        longitude: this.get('longitude'),
+        date_added: Date.now()
       };
       this.set('addNewRental', false);
       this.sendAction('rentalSave', params);
